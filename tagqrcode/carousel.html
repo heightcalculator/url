@@ -1,37 +1,51 @@
-<script src="carousel.js" async>
-    // In div below you can add a `data-link="https://photos.app.goo.gl/HIaiushu09129hdsj"`
-    // In div below `data-delay="3"` represents time for the slideshow
-    // div class can be "pa-carousel-widget" for a carousel or a "pa-gallery-player-widget" for just a photo player
-    //
-</script>
 <style>
+    /* This font can be found on https://fonts.aarushmagic.com */
+    @font-face {
+        font-family: 'Lindsey';
+        src: url('https://fonts.aarushmagic.com/fonts/Lindsey-Regular.ttf');
+    }
+
     body {
-        text-align : center;
-        margin-top: 1%;
+        text-align: center;
+        margin-top: 1vh;
         margin-left: 0.5%;
         margin-right: 0.5%;
         font-family: Papyrus;
-        background-color:rgb(35, 35, 35);
+        background-color: rgb(35, 35, 35);
         color: antiquewhite;
     }
+
     h1 {
-        font-family : Fantasy;
-        font-size:50px;
-        margin-bottom: 15px;
+        font-family: Lindsey;
+        font-size: 5vh;
+        margin-bottom: 0.1vh;
     }
-    span {
-        font-size:20px;
+
+    p {
+        font-size: 2.5vh;
     }
+
     #txt {
-        margin-bottom: 10px;
+        margin-bottom: 1%;
+        height: 13vh
+    }
+
+    @media only screen and (orientation: portrait) {
+        h1 {
+            font-size: 6.5vw;
+        }
+
+        p {
+            font-size: 3vw;
+        }
     }
 </style>
 <meta name="robots" content="noindex">
-<div id = "txt">
-<h1>Aarush's High School Journey</h1>
-<span>4 years of highschool... A lifetime of memories...</span>
+<div id="txt">
+    <h1>Aarush's High School Journey</h1>
+    <p>4 years of highschool... A lifetime of memories...</p>
 </div>
-<div class="pa-carousel-widget" style="width:100%; height:84%; display:none;" data-title="" data-delay="3"
+<div class="pa-carousel-widget" style="width:100%; height:84%; display:none;" data-title="" data-delay="5"
     data-background-color="#232323">
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczMaRAriTBfVOIeWxpdjbfBCZFXyO2zDloy4vG9MyVj1GBhQvV7RCzRXet5bdux1LRmN_erpkLo3PQlIZI3-GDLF5jyhSureg5VAqrHsVW_NPppEibo=w1920-h1080"></object>
@@ -40,73 +54,27 @@
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczNx7LPbaIuS02NEOwHunMLzWOEa7zcGB7J_1JI6ZaakcKEDDhAJVuiAjr9Z6pZ2hVwgkDd19CtUFBlN1rXi6INH16-XDMmFffjWU_XuuPNUOBxIpiQ=w1920-h1080"></object>
     <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczOGfubRhpX7l0s6Ne_5k8eHKQuPLg9fjf1RdLGqBcmk1a2oHNBJYgrs-UhSS9X2msEz-vXccJ98ZRvFxBVKQhga9tPCBWTvihNwovHXhjFQ-jU7ZMA=w1920-h1080"></object>
-    <object
         data="https://lh3.googleusercontent.com/pw/AP1GczN3WQFsMgNAe0HQemQpYQeXmH5Aoz4gofHYx8mz9i8NlungJJOnE7HwTb8aqjPxBUDJwMn3folJhqxsxP-gyAAMdp_SnC9PUzxXdy99R-fXJ_KCLro=w1920-h1080"></object>
     <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczM25chbjn2FjXPfMCuOn4QtNxBbvxS35P-HBShUNrksOdZ4s1XxJ2maqV-vGQKJvaQYvtkYMajX1ol_YJ8wq5Rhrf-MOZvSdb7TKczihnxR1qTnAtA=w1920-h1080"></object>
-    <object
         data="https://lh3.googleusercontent.com/pw/AP1GczOPEvSYPTUc1OVU7ygnw-jpnoi8W9D6NvNyfGiag8bBj5jtwvRV9td0dWTqkXRebydsAxD01CugMx7ctVu4Pc0RbRyyQ7jTHx1_3hZD8PFvFda8sYc=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczNxlWq81inoWhgrnx6MLQoTVw1y3E4MFI7hrM7czpF--bz4Pben6P-LFfFOYhQ5qLFv3fbmlLSlBzNebZa7PFjrQgu0ZsXX_9LzITSMptdhAhJ1dF8=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczMsuQ_VWvpR_UHbEy5fEHZqyVFAXlaH3an6up2uRZ0jG-gh9DrvnrLmC6taG4tzO7UIOhtQK2tR-aAlZiHOPZbeeBu77_paJ2TziJXG8MZd1x-IRas=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczNuEaU4h8yKeqeiou6TfEvmqPUsCJY-gfmN9S2qRA2z6N5nRcGIVoMrBnm_pyio0gbz1HpsMar16294__1x6xSl9cqzNmvy891m0HLe7pueFD48pa4=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczPotwFUINEjl19McwG8q-H0x5Wnot1puUNb6RRaO2ME92LBtN5rAzRcx1eW3fAV43LO8KzP3MKPvtnqgWsN_MkSY6HIoLneOfGo1FEss1axG-WFpcY=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczPzHdS0GPRnOqQQZm8V08kjMzGSjNspSFI-MCry90xhK7_gM_bx5Rqmgygg9lS-uIbywzvlGqujsAbKLj5RObjEFlrtw4H0xDlGYv8v3vC9uIxlNfk=w1920-h1080"></object>
     <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczOCz3Umop2kTedqBxrOQy406gu9xifG04HMc5UdcvEZA80R5a7jGodsNaMfhmMGdXTqyDf67GFw1xpRPaSHKgSwMVWxBRvQb3yEXfEWqONIYRrupio=w1920-h1080"></object>
-    <object
         data="https://lh3.googleusercontent.com/pw/AP1GczN0KmXjnhfNhpXd1sRR0c807jNKXSYYWsBm-VcWEvAvuMd7P_CD9Cq1YnHLIIyl7CfMJqXsvOGN2rsS4DZiacsAm86eRyNTDhNBcRV6g6zDz1eDmJU=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczPSk2Wyyd62NdztJmk3CiAa-cfJTgKZOMT4SRCwjIK6i4cCPGLmGRYv0tOT1ZEOTDwB1afdYhFLTAUU1okJq1DVSutnL58LRocEljbmZ0oYo7QsqWI=w1920-h1080"></object>
     <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczMqoQ6Fp0RZJMeFJaMg6vqYxmoGrh0FHsJAjSnaq8jjxlYLkQ5TTRYgsSkoyam-kIfBqkLp-UJxv79Zck96SDM1Reoxs86dvzDzqebw69Hdaf0gelE=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczPscZpXwRjw5Vz0lqOc5G4nObxyq-2djAmZDx3J6wTT6XhxGl2S5LPZ39f4FUMKGA7RMLiizCKEvEb_fP8Q7aFRSl09pMVxAi4EbNEQFKGSO6vMuc0=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczN8OY-VHRaui7SC5CZYj0WJqXif47txY5-Ee4I-zPsxKF38exRTzekEtRkB1AAMZTBNJ3vIUXoGna8p7xmjW25ohsrfi9leX_z0y49xwYKqmq3cjh19=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczNtAOWDwRnVo7xMpaGFvMFoGYdCNqTkIRcWCPVA1lmqC7z1J-9MkzNJAiuJrBtaA1rTvsBDTgPUZR4GogLrS_7taXDW8WqlyVhtO31RoYFGXXFbFnU=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczNkWVFiqZgZ9vbJDc-5JjiUl0pGRQfwP3FlsemI_61EMkdfOJO2H2L19GEMVnBiGGhIX3ry1l5JWqvIGgrWb27C9fl7gYAh1Uj6vPecQ8fK7JVHxSs=w1920-h1080"></object>
-    <object
         data="https://lh3.googleusercontent.com/pw/AP1GczOXN8CUWcTsQg1fUDJ8QGg0kAKcjwyYbF615AlyNhhDeUlf5eseNsHRcORIIy7N6OK8rVUnkrfR2yOzi7F4awXuaEvcatYUIg-yifkFlUdsXYMqon4=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczMttsxDIwFnSg7NVztndae3yuMlc0InaDemCMvPxsXFlEV7p46RALDgXzodYSo56YAAv1Ui59ES8Qj17N7MZuqEKBTt3lA3Z_hUb_fp2kFyjpG7FRk=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczM-EuFqFl2KUzkytt_4mUSnxpgXWlcMUQ0uYJc_fSn6_Kfb4rzTLcS1KhJoxFiDUFYcz8KDZUnY6cKZ_hIEwc226VqTA8mvJHMAQu6A5DPGJ-3ajDg=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczM0pl3aiz4spIKJMUauJ0pK2SdsSnYVXc7ixCwWhvRpneZJ9dFMoldRya2pFUex0McEaisf25LoP9kKnxMdjlus053rYIXHqxLLL5SplS8nOLqGsXc=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczM21UhdGtYrVkt5ti-cJg7-xgwkc8nlACtDTsY9hDsRilPeN4F6yQfQKvx3MzHddLI3YoXwYtc1h-wGhuVoLbG3OocKyx_6Uf8askFeOGq5FJdSFBY=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczO0B5-P7UBUSrjX92MbXqSOvoPmq0uhv9B1-bATZyqHHHbkCpTXDrOL7zTwyAFVrawWz6ejZ4oO8eAYf27oJgJYf93u-Hk74rwPperAhMVa7r289GA=w1920-h1080"></object>
     <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczMKlbbpucJ-f4QWZHf52CiEH0NE8LwHUN3nPwJp4wQzyXoCXQPCd-sIxkMLKSXkCbAVVLrrhazCmxJtypauS-foAHt1e5XhEKoye0W9IL5A6Ziet6U=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczPB6A3AsaUtzgnXnOeKkYkuyE1AKmVMD9wM4AkZ1gAJT9nBc1VrHMP7d0V6O1dr4unDnnQdPKW70LzRA4roZxcWdHfDSyHbcOihIPrZGATnpkIADUg=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczOd2GvjMqQbx3TjZbSmAfNwaOsIqLGYj2Xcv38bEStBAxFbZouHpr9GGoh7oVCQPI6SEcgKkd4c9cPggJG4Amt8O8XDdyrCzvTL5XW2r3WbGhf12zo=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczOhGPIRgKQFgK1zGGug0Av8iO4QKHQ80tFXdSRJqFIqUn3QKpMWDuWnnSHNYnc8hss63h78up8kIQTENq66EMnHToHF3S3vgn09WQVZO0KPGQKjR6k=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczN4yEWa4LkH3yF3_4IGXYWDPK1nEypl1ztHM7HdimkBhwBXnwUzHI_8tOHwWJLGmEPmWGLaYbz3UczQrdWvZgTXnjd5VYGNV34d9aM1OwkmxG_8Oz0=w1920-h1080"></object>
-    <object
         data="https://lh3.googleusercontent.com/pw/AP1GczN2mMO1DW2ZwA2Mam1AUhCYTdR45CWsf9j6oShM1BbtGjYEm7dw4R0E_eo6-XtI16Bktqp23FXNkCe7YxK_JGzbC32V1ZoiRHOmgti0v2m-h2oBjkg=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczMRzt4kr3JRVct17PbBkAmzvYjZ1EydDFYtHztYcJkgb_DZs6WvTvWGym7Ncih973qFbme6SN7np_n75GctVWdXn2mXSTE7fIeE-daTym8d5yerOeg=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczOueldroWTLmtOWqm4ISNFn1DQ2s-U6xhXMPBk2q4ydUEFM3Ug9PFWn5IH-Yb5E0oIY8wH6eHlF0jBZBtjC9TN-Ok8pBDiEsg4jAcK1qJoks-nnUX4=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczMz7yMcjbvVZ4SOMYKVyabYyHwTY7redX3B-frmXemSJgz2VE9iHP3Vh0K_lz6UWvXP4DdGg-rUdX5A1AxzpPa-W-WOrAGjBx92IHolTdhffW8D2oM=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczO_jYcKa6OQqwhWtm5xHMq_PDj3gvOZoLn14xnWNGB626OeCnfCXtmP5uG7O_EolLfrlOXUcQkBbIVTCUvBVi3jHOy9d-XYNklggMlQNE9QRuMeyBs=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczNYwZbV6fSbAx5RcTHzdSK18isTzr7p43lqn8c8e8OevJjR2M_csezpXAShkT8Q79fZrqjJX8HyQc1ZCPqI79pfY19M6Bkd_OiT-Eqs7dvNzSom2l0=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczM49ANP-g5uSEGP1Q1kyRmHEd0yzFTIuojxRZSUk3675MB-UAoG6mNzQBuWV7IYeWhcPJD6f2TchA0B-6iv1NeKOhsV6dyWuaQhFFSAYFIUBeL2vMQ=w1920-h1080"></object>
     <object
@@ -117,8 +85,6 @@
         data="https://lh3.googleusercontent.com/pw/AP1GczMIbajAgaj-tWBcEWFutu7Cq6slYWeGngloIiFYYMoCcaqCMRvGBW9dBQxLJgcF8ZhXd_OWezhJrxIQOApWsunxpFfKdPLmQ6gBV1bDyT69FcRtOOM=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczO4fMW-UDe9usNtyQGBRhWgeMVx_Tns0pdyoltycg5uhfuvndTlwGonQCbbthz7jLWuTxEUZ9O5IjVK_4Be7iZ7Z0rH0kD3bwsXrIepJ9SU6xF01Ok=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczOH0QEGsJnVqMJOTRQZYvuGggbUbInmquH6Bl_79SggZ4kr-DAZd3_lYGSguNAxio1QZQlZCN5pALy2e9BuxSlLdn_O99GePuZ6EhOVXToyIt7zlbEE=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczPOhb5WCIeCc-B1VCp2j669kiPC9Cp7t2NYy8lDL00HYZVaOCC8I_l1NtyM0isNisNq7Ka08MWTSF6kyS8I74H7N6cfPgcQvAPc1esne4ZIa_ZPgF4=w1920-h1080"></object>
     <object
@@ -146,63 +112,23 @@
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczPfw5Hp7kK1yVk-FWMxdgrHuvKF-ioR1tEQrSA4bhZmZYGDnsycAsNbVSrD_2dlp58y2EgYJoRNK3C2jYk82Dp-07MxstML5CudfnYahNtAKOaXO1U=w1920-h1080"></object>
     <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczMALstpoVIUwbuG4q-sp8lHo9Ejn1lgUN6QbOqAGzagqU0PBSzGSySDYaboUPyxw9bPXMM12E0Rr7HVnXQK_e168YiU7khD8K8xlhWIXghFTvaIOeY=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczNT-8lfiaOgd8qFkqPw76pJIyhK9tadHvEtDAfy4vvG9Lxixa6XfOxmEXnOaHEtZod3uXAL8bckBxeg0EVKmmAdziNMWCiucKR3LKWdf-m3AR2HRY8=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczPYEH86jAF43kfHVVy6NXBsi7xnVzBylUrUfkK_j8Yf4_ELYNMcQrUTGZ-omqw2Ep3LTbywvkQRm2ewmomqa6oUenUS7m2dEZFnL-ub3Iu79V2rmnQ=w1920-h1080"></object>
-    <object
         data="https://lh3.googleusercontent.com/pw/AP1GczMGRAiGOyfckRpwhmWpxdfeSHjWC0xqSP4d8NX2LComBaVHXkE-89rOun5msBEbpKpctpbVbs13-MZbcV65-LVXoFvTOxoPLRNJaaKarn_ICr2J__c=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczPQn0Yw0MDvbEbMfYscYpSQ0l91LAjQB-hu_7aiR_oBJUaZNqZOciJKZ--TZryB-PtHknlIszyei3ApUWDlH3Ze6PcWdfyhMycfSVwYXuHkKAbq50Y=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczMruK11TBe5w7SwFeWRdoxUAeoXC4OU4iN_BlBmo2zR8PHq_iNa5iBvv5MpRC6OuYkAga6TnHKMYM5uJjlhFbRb6RUkZDzp9AazMKJZf3ieXyNZtIc=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczPBn-wO5eAH2PLufolERbfGfZWs8XcEOkxDW-WuYF1fuyFWVSDKXgwT9JzLyzKxGHf-9dFtzZx3HFcSf8TrSGaKx_UrS-ksYKXi6RhR8NgSO9Yv50Y=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczOZey3H924zmbFyFeeX-zVfaHKSNuieZ2d8JgVWuPyuf9fQQaPCQht693YPHxRR9KD2c0SLt6T5Yhd8Mo4BcZl5SrcQqk9FGh_rmtPzxLP8qyiO6Vs=w1920-h1080"></object>
     <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczNWPTWha2gRX5eErpntIgW3lTW33MMsa-5BrOl8BuCEBh06B4RCpVdspLWcrUPLZ4_EnO3K-nCTL-5VjNLgvZCQJPesPG2GrPgyyMpZlaFoRLqQI-c=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczO8qj7gmShrJ5-j51ezwQ3EfPRL36MY5K_lQphZrMqYVoOib1Kr5zaDcEGqjGgy240XhG7KcdBHuTgAdVfrnZdVngaBYhZprSfOTld3yyYJWPn-oCk=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczOVEUPuzITQ0mQi-0PX6TpbVnSYB_87FJAzek6QDv_LwxepS7LL4ievP8jG2yWey_JwPQcYD66zBASnlCSRqscXvxUF7-9K7IaANXCueMsfqHu6GX8=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczNnFJ618OtfwsPUFTyLmpdvb-uOXq8XYK8euXmtWhvvCW7elwluiJZK8EH6bIlOb3jpmYa_hLZzqtv8GCUtG2CFhcJdV1ZMVVgzyJgA6J8d-O3HQnk=w1920-h1080"></object>
-    <object
         data="https://lh3.googleusercontent.com/pw/AP1GczMkSAU5FeMy5BJ5Hd7EFF4VMpZ9ovFcMlBFVAakd_eRTjHYvQWutG7uI7plp_IykWHAV-Bbjykn1n2XamDN1Sh2XdKCbdIsG4cXVbE8Ccz9s5oIXVE=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczN7-MS__RYqmpUapBicmegnW-aB3EllVz6q3POR4pVaGI1HkQOoei1zkeNtioOU53iMQZ-nZEkChmg26wKE8svSXNJscvSTdziHFmn_Y1eERU5AL44=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczOqaOn0w94Ny_tVQ02-spamHgK0dpDX7gmHaJ9nBIiJCCka4zIvmMab9LIDU6gLtgvkXUIYo8IX6ZsJnEmDjMGD2RZ0PvBn_rEY17a-BXQUGpql2yA=w1920-h1080"></object>
     <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczNhF6zW1mfLMueuB7usEz4m19PU1f4CHQwU7jB-RnZs9qBfjaUJtGPeqMWlkXt_Hjcs8eb0IrlS45ZYAWLub4QFi0-igOZddvkAKybMDApp1pLzH-I=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczPLTGbkFAlFOYBm_ckVCj_nJCTOhpxGiHhHw61zG4go3brS0bs5b9-DzyDjYK2RsbLNTi1Dj6HOpKbOj3dOpmiDOlbjk-RoTrGp2t2uWn8nu_y9EXg=w1920-h1080"></object>
-    <object
         data="https://lh3.googleusercontent.com/pw/AP1GczPpd4XXxPgtNNvvtrLAzDIPzahpVwQxRAT4zPSINUKqGcZWmp88EO6nIs11QKGDRhniK3_HwL2La7uWUOcibvNkPsov7-tm-t9M7HE8PCXruBmbWBY=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczOpyIEy5aDuxw4FAZ5PoWbx48YiibEpp6PMgr9cSMV5MYvFWOePziVsZYhPXmQWA7aTF9JnRdane349KWn-LsyePcqMZ23RtiLFFl8MDYFdvY7oth4=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczPh8OqsuJ5y8sxQlXXvEYhMELFDbHHUERvCsDMiMjJCjBKcv3m7XSu2F1-BcK7v0OzMFh8WgFL2qPTxeXPz64H6lSjVUNt0JQEQTMmRS2KRjY9cx9s=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczNh5BJNxYnzViHuRJ2dLb2PcDUWy5_ZKRlYrk7GHAz38TpX8PhkYlMtgm9bFjFDiqjlZgYN6451koQmUNkfePJbbryfu-heMuvb4FlzNmQa_QFP76k=w1920-h1080"></object>
     <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczNkm3cKM7-1AFkEiv9hYXNYggLp7r1_eZCRttB6DhVemSDQ3cDMtWe9zZIxeaMhQH1LGTqZEOJsW_KCRiZtcuR0PLO7ppQfFvZqsgTBrBtbDWbzzdI=w1920-h1080"></object>
-    <object
         data="https://lh3.googleusercontent.com/pw/AP1GczOgVzqWLlr-_nCFPUXFdY3tmXSaKxU1dK-T_SHlMmZIGEuzWAP4f1XDDs6ocnzP6yrptBg1IqCgS3ynwxh63n2e6JBwpsnD6kNdaojXht0jvlyxitY=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczMgtvkqoVHjPvsbizKScvfhLml6GZPlfn7sS5TqfLNIOqNeaqy3lgSPQ5MpHpycTfaJ6AwxFYrPtzA_-WKtCvVGsVwOhKeXzjZUvaoocPOAvlAzYOc=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczOJw4xNXP3ohuTWxE9e2LhtoeE-Pp-tmxwOtTj_iDQDhbuwDR9xsESG2WYIVp6VZAHVhHX7pEHWsRG3e_NeW7OUAp09DvqOo46KEjFR0XpnOkZygSA=w1920-h1080"></object>
     <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczPWkRj3h20_yI0V_ll_64lC-Wdf-xGNkLxAMaK9iOKVFCdHhIqfQKrfAaRBkVISHLEbgOzVq0UIQpVvLtGG5A4VUNPLk6h3gYXPzbsjuKeZf1Mx7wk=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczPYj7IrWdb0D3-qjpeIa8QXaTlhlQQqMI3XTISyeptFO6i3E92RmqF88gCODltg7UgHRYpWBoqk-eUU_Da1uLxSDmnn3B17pwocj-7mslIDBie6WZE=w1920-h1080"></object>
-    <object
         data="https://lh3.googleusercontent.com/pw/AP1GczOA2DALsTe1WPXnbBvWtZdgtg8HEfznv7UgsiAHVAqN3i02EFRyf3C7sT92cwatCMervR6elzTrOQpxD4dGwggNvW3jsXzOrKkqf8TZybEqrfmWn7g=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczM8ead_haxAXJxy3THPCOxYkYS19TewZpijTnXgw_pbDYkHraLtSCdQuwTPvNNoHzUVvFhvloud7m6WBpSEIdfvhINLMZPMB2mkgsSj4PrW6C5lu6w=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczP10nUSLRo3pOAZ5NDVq29AEOMwWQIfktNZMJKsqsGAl1iHNnnvwUkuO8aLfdkawOzSn8AjZWb2z7t2f675HjSO3TgbA5wFBX-zC0zcWSCpSUrCFmo=w1920-h1080"></object>
     <object
@@ -226,19 +152,9 @@
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczNGDr9nGQKi5W-qJkmlob5YFJA-4f35tVoIdHs_Qh59YLzIMvcGT53EocosUzIAkicSu-9OV9LU0sh9z4gB6MgTthDYw6q-YT4HJUIEBQPKidkCEo8=w1920-h1080"></object>
     <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczPVON-pY1bBDo539mjPEA8ibtI8INtF0ptl2qqZ5XFoK7Mgs9F8-COasuPs35Nd8pqxzy1rhL4tvdd37KwbJVujRC0rJESuSZs8vsRcmtUfhyMV6Hc=w1920-h1080"></object>
-    <object
         data="https://lh3.googleusercontent.com/pw/AP1GczPfS0so-ZAXR7CQGeXEb88WCESdAbVIe3JaI8G8_iZXqO7K3Ru55mUelKBl-ucVwzpEOF5iVkKoBvOCD3KQuWAfB9N8Y7FItGloKgVvI6uZGcguHc4=w1920-h1080"></object>
     <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczMlYQYqX-g4YndZ7GaaswepDemONcxZygWGMJoWWZjvRlO_jFoLtNtRcJHTjpPD5byMy7qmXAUkSxRZFzH5oqFtn3QuPgI5FkVSnL3gCr_QLzEIS0U=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczNtWtUoCcyrb4StlL81j0BXwAAwyCwE3bWIkAjMHRHSrA05Y-Ue3MKmJA-GYg4qQ8m4uVAL-u-EmP_v-IBYTdSUSpxXxx6sXKFmAzGcTjMXzkPsVrg=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczNCP_vw1mzqUOoyNfgvS77SXEe4nxtMB1km1h0CziA3xSE7NhaKn1ZXVpAp8Zp5SWZbCRnXiCTE0K4rce8RvUu0t95ag_CxepPn1X_37j5a34DVnOw=w1920-h1080"></object>
-    <object
         data="https://lh3.googleusercontent.com/pw/AP1GczP3IoH6mazTWN0ZART6ZkQV1E9PKD_QYM57Ddp4p3yuwhg_wTtW7l8M2EWjW8tWtxf94TdAj5Da7_2dtQW1nyaOw3qIIJpsiHJS1pxbwNYGrIxJ0bk=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczNbDmwxQCk5QIGahp1hsYXwXXS8jE_4gNURinAfixCiLXywOjbkTP2TuGiCCbKU-ntGK4dO2gQMr0A_taGpRb9-yOc9FkewFdv0ZSKBJjP_PDGv7rg=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczOInt_XvglLXdSS463dZ6uid_h0lPv9VUDtoybljV8AxFIAFzdjmAANIov6Izzr3LEaXCbl2zwUL534LVdnzjTabvoNoGUabDkoCnpOJCs6PDZ6WLs=w1920-h1080"></object>
     <object
@@ -261,8 +177,6 @@
         data="https://lh3.googleusercontent.com/pw/AP1GczNtLqRT8-Mdloqvfvez_SxIUZjiWUs2rRZS8vuVGUXprs9W8gBtikv324lsE8w0gONgDnDztTWPEB5LKO_h6dz9M5G_rS1xr-BExSUZhOmewgQyV1I=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczNWipPd5TXF7QIfPbmqNvr8Hk653TNqGNAy5ShBdUnvXxUbhU6JN07AYH9mvzv-36gFAM58HMh8SSxpA8cMBlbqdrTudld-mSZGmz3Rp27eqRCUIpk=w1920-h1080"></object>
-    <object
-        data="https://lh3.googleusercontent.com/pw/AP1GczMJG1t8GJgmK5Lom9O1ZQr0TFIJ3j-vu3bvTHAXy-tpMjcOUKP-onulyGsuASiZpuz9w3BvEfDEsI_HL8MV-KDj_GfSqtsjDl8xDzekl0SNmMCdG8w=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczMx-Q-Uq7ssN-C_eb1BSchXoikoQkDnmOpTfWmWSA0KlysJhnOmpyB4hnA7qd6o8qqv_twWYpspYLfet3ZrcZ2313fPyYZeIVgpMmuX0sjGZTQ4rRU=w1920-h1080"></object>
     <object
@@ -301,5 +215,10 @@
         data="https://lh3.googleusercontent.com/pw/AP1GczN7Ao6rNPo6dGv2L4FrJsI7i-BeID8megQAmOT3NAtZdp11jIqD2vsJp_FA_FU9q4ru2MJdaMCNTKgH10VIa6tSC2z9ot9C5AB7NwFeEqOWBWXvcXVP=w1920-h1080"></object>
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczPWyqHPJ1SBUxlPsloIJa--xH-mXxwhIZ52DNuR03G46VOFG2UiDrjqE23RDYBcpuAJaLvIeCBBuf0HnhZDwwsNYO9v6_VJry-mf-FybqUT6R0xnLIX=w1920-h1080"></object>
-
 </div>
+<script src="carousel.js" async>
+    // In div below you can add a `data-link="https://photos.app.goo.gl/HIaiushu09129hdsj"`
+    // In div below `data-delay="3"` represents time for the slideshow
+    // div class can be "pa-carousel-widget" for a carousel or a "pa-gallery-player-widget" for just a photo player
+    //
+</script>
