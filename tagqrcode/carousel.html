@@ -1,84 +1,95 @@
-<style>
-    /* This font can be found on https://fonts.aarushmagic.com */
-    @font-face {
-        font-family: 'Lindsey';
-        src: url('https://fonts.aarushmagic.com/fonts/Lindsey-Regular.ttf');
-    }
+<html lang="en">
 
-    body {
-        text-align: center;
-        margin-top: 1vh;
-        margin-left: 0.5%;
-        margin-right: 0.5%;
-        font-family: Papyrus;
-        background-color: rgb(35, 35, 35);
-        color: gainsboro;
-    }
+<head>
+    <style>
+        /* This font can be found on https://fonts.aarushmagic.com */
+        @font-face {
+            font-family: 'Lindsey';
+            src: url('https://fonts.aarushmagic.com/fonts/Lindsey-Regular.ttf');
+        }
 
-    h1 {
-        font-family: Lindsey;
-        font-size: 3vh;
-        margin-bottom: 1vh;
-    }
-
-    span {
-        font-size: 1.7vh;
-    }
-
-    #txt {
-        width: 50vh;
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 0.5vh;
-        margin-bottom: 3vh;
-        padding-top: 0.5vh;
-        padding-bottom: 1vh;
-        background-color: rgba(35, 35, 35, 0.427);
-    }
-
-    .pa-carousel-widget {
-        width: 100%;
-        height: 100%;
-        display: none;
-    }
-
-    @media only screen and (orientation: portrait) {
         body {
-            color: antiquewhite;
+            text-align: center;
+            margin-top: 1vh;
+            margin-left: 0.5%;
+            margin-right: 0.5%;
+            font-family: Papyrus;
+            background-color: rgb(35, 35, 35);
+            color: gainsboro;
         }
 
         h1 {
-            margin-bottom: 0.1vh;
-            font-size: 6vw;
+            font-family: Lindsey;
+            font-size: 3vh;
+            margin-bottom: 1vh;
         }
 
         span {
-            font-size: 3vw;
+            font-size: 1.7vh;
         }
 
         #txt {
-            width: 100%;
-            position: relative;
-            margin-top: 2%;
-            margin-bottom: 1%;
-            height: 13vh
+            width: 50vh;
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0.5vh;
+            margin-bottom: 3vh;
+            padding-top: 0.5vh;
+            padding-bottom: 1vh;
+            background-color: rgba(35, 35, 35, 0.427);
         }
 
         .pa-carousel-widget {
             width: 100%;
-            height: 84%;
+            height: 100%;
             display: none;
         }
-    }
-</style>
-<meta name="robots" content="noindex">
+
+        @media only screen and (orientation: portrait) {
+            body {
+                color: antiquewhite;
+            }
+
+            h1 {
+                margin-bottom: 0.1vh;
+                font-size: 6vw;
+            }
+
+            span {
+                font-size: 3vw;
+            }
+
+            #txt {
+                width: 100%;
+                position: relative;
+                margin-top: 2%;
+                margin-bottom: 1%;
+                height: 13vh
+            }
+
+            .pa-carousel-widget {
+                width: 100%;
+                height: 84%;
+                display: none;
+            }
+        }
+    </style>
+    <script src="carousel.js" async>
+        // In div below you can add a `data-link="https://photos.app.goo.gl/HIaiushu09129hdsj"`
+        // In div below `data-delay="3"` represents time for the slideshow
+        // div class can be "pa-carousel-widget" for a carousel or a "pa-gallery-player-widget" for just a photo player
+        //
+    </script>
+    <meta name="robots" content="noindex">
+    <meta name="description" content="4 years of highschool... A lifetime of memories...">
+    <title>Aarush's High School Journey</title>
+</head>
 <div id="txt">
     <h1>Aarush's High School Journey</h1>
     <span>4 years of highschool... A lifetime of memories...</span>
 </div>
-<div class="pa-carousel-widget" data-title="" data-delay="5"
-    data-background-color="#232323">
+<div class="pa-carousel-widget" data-title="" data-delay="5" data-background-color="#232323">
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczMaRAriTBfVOIeWxpdjbfBCZFXyO2zDloy4vG9MyVj1GBhQvV7RCzRXet5bdux1LRmN_erpkLo3PQlIZI3-GDLF5jyhSureg5VAqrHsVW_NPppEibo=w1920-h1080"></object>
     <object
@@ -248,9 +259,5 @@
     <object
         data="https://lh3.googleusercontent.com/pw/AP1GczPWyqHPJ1SBUxlPsloIJa--xH-mXxwhIZ52DNuR03G46VOFG2UiDrjqE23RDYBcpuAJaLvIeCBBuf0HnhZDwwsNYO9v6_VJry-mf-FybqUT6R0xnLIX=w1920-h1080"></object>
 </div>
-<script src="carousel.js" async>
-    // In div below you can add a `data-link="https://photos.app.goo.gl/HIaiushu09129hdsj"`
-    // In div below `data-delay="3"` represents time for the slideshow
-    // div class can be "pa-carousel-widget" for a carousel or a "pa-gallery-player-widget" for just a photo player
-    //
-</script>
+
+</html>
