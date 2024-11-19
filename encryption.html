@@ -170,7 +170,7 @@ function encrypt(message) {
         let relInt = (BigInt(toEncrypt) ** e) % n;
         let relInt64 = b.encode(relInt);
         newString += relInt64;
-        newString += " ";
+        newString += "#";
     }
     newString = newString.substring(0, newString.length - 1)
     return newString;
