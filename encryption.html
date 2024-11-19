@@ -170,9 +170,9 @@ function encrypt(message) {
         let relInt = (BigInt(toEncrypt) ** e) % n;
         let relInt64 = b.encode(relInt);
         newString += relInt64;
-        newString += "/-+02390kdjs";
+        newString += " ";
     }
-    newString = newString.substring(0, newString.length - 12)
+    newString = newString.substring(0, newString.length - 1)
     return newString;
 }
     function copy() {
