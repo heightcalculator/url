@@ -102,6 +102,44 @@
 
 </html>
 <script>
+    var Base64 = (function () {
+
+    var ALPHA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+
+    var Base64 = function () { };
+
+    var _encode = function (value) {
+        var result = '', mod;
+        do {
+            mod = value % 64n;
+            result = ALPHA.charAt(Number(mod)) + result;
+            value = value / 64n;
+        } while (value > 0n);
+
+        return result;
+    };
+
+    var _decode = function (value) {
+
+        var result = 0n;
+        for (var i = 0, len = value.length; i < len; i++) {
+            result *= 64n;
+            result += BigInt(ALPHA.indexOf(value[i]));
+        }
+
+        return result;
+    };
+
+    Base64.prototype = {
+        constructor: Base64,
+        encode: _encode,
+        decode: _decode
+    };
+
+    return Base64;
+
+})();
+var b = new Base64();
     function modPow(base, expo, p) {
         let x = BigInt(base) % p, res = expo & 1n ? x : 1n
         do {
@@ -110,7 +148,7 @@
         } while (expo /= 2n)
         return res
     }
-    function encrypt(message) {
+function encrypt(message) {
     var newString = "";
     const e = 569n;
     const n = 85193106407405093789019561148033710405410819033840043622076682207175286739665499907463358351041524822559359027417589138777519341082780323190987623359882305002246784176375273415586844593595857353676208548974492657445730137534694630548076298969086511192968912113368006381n;
@@ -130,7 +168,8 @@
             toEncrypt = toEncrypt + messageArr[i + j];
         }
         let relInt = (BigInt(toEncrypt) ** e) % n;
-        newString += relInt;
+        let relInt64 = b.encode(relInt);
+        newString += relInt64;
         newString += " ";
     }
     newString = newString.substring(0, newString.length - 1)
