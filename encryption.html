@@ -111,17 +111,31 @@
         return res
     }
     function encrypt(message) {
-        var newString = "";
-        const e = 569n;
-        const n = 85193106407405093789019561148033710405410819033840043622076682207175286739665499907463358351041524822559359027417589138777519341082780323190987623359882305002246784176375273415586844593595857353676208548974492657445730137534694630548076298969086511192968912113368006381n;
-        for (let i = 0; i < message.length; i++) {
-            let eachChar = message.charCodeAt(i);
-            let relInt = modPow(BigInt(eachChar), e, n);
-            let relevantChar = relInt + " ";
-            newString = newString + relevantChar;
-        }
-        return newString;
+    var newString = "";
+    const e = 569n;
+    const n = 85193106407405093789019561148033710405410819033840043622076682207175286739665499907463358351041524822559359027417589138777519341082780323190987623359882305002246784176375273415586844593595857353676208548974492657445730137534694630548076298969086511192968912113368006381n;
+    var messageArr = [];
+    for (let i = 0; i < message.length; i++) {
+        let eachChar = message.charCodeAt(i) + 100;
+        messageArr.push(eachChar);
     }
+    if (message.length % 89 != 0) {
+        for (let i = 0; i < 89 - (message.length % 89); i++) {
+            messageArr.push(100);
+        }
+    }
+    for (let i = 0; i < messageArr.length; i += 89) {
+        let toEncrypt = ""
+        for (let j = 0; j < 89; j++) {
+            toEncrypt = toEncrypt + messageArr[i + j];
+        }
+        let relInt = (BigInt(toEncrypt) ** e) % n;
+        newString += relInt;
+        newString += " ";
+    }
+    newString = newString.substring(0, newString.length - 1)
+    return newString;
+}
     function copy() {
         link = encrypt(document.getElementById("textInput").value);
         navigator.clipboard.writeText(link).then(() => {
