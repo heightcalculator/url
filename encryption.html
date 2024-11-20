@@ -104,16 +104,16 @@
 <script>
 var Base64 = (function () {
 
-    var ALPHA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/_~)(*&^%$@!-=`{}[]\|;:<>,.?';
+    var ALPHA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 
     var Base64 = function () { };
 
     var _encode = function (value) {
         var result = '', mod;
         do {
-            mod = value % 91n;
+            mod = value % 64n;
             result = ALPHA.charAt(Number(mod)) + result;
-            value = value / 91n;
+            value = value / 64n;
         } while (value > 0n);
 
         return result;
@@ -123,7 +123,7 @@ var Base64 = (function () {
 
         var result = 0n;
         for (var i = 0, len = value.length; i < len; i++) {
-            result *= 91n;
+            result *= 64n;
             result += BigInt(ALPHA.indexOf(value[i]));
         }
 
